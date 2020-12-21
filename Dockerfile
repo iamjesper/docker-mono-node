@@ -8,3 +8,5 @@ RUN echo "deb http://download.mono-project.com/repo/debian buster/snapshots/$MON
   && apt-get update \
   && apt-get install -y mono-complete \
   && rm -rf /var/lib/apt/lists/* /tmp/*
+
+ENTRYPOINT []
