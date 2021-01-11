@@ -9,4 +9,6 @@ RUN echo "deb http://download.mono-project.com/repo/debian buster/snapshots/$MON
   && apt-get install -y mono-complete \
   && rm -rf /var/lib/apt/lists/* /tmp/*
 
-ENTRYPOINT []
+COPY ./docker-entrypoint.sh
+
+ENTRYPOINT ["/entrypoint.sh"]
