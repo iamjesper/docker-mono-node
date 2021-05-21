@@ -1,6 +1,6 @@
-FROM cypress/browsers:node14.15.0-chrome86-ff82
+FROM cypress/browsers:node14.16.0-chrome90-ff88
 
-ENV MONO_VERSION 6.10
+ENV MONO_VERSION 6.12
 
 RUN apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys 3FA7E0328081BFF6A14DA29AA6A19B38D3D831EF
 
