@@ -1,4 +1,4 @@
-FROM cypress/browsers:node14.16.0-chrome90-ff88
+FROM cypress/browsers:node14.17.0-chrome91-ff89
 
 ENV MONO_VERSION 6.12
 
