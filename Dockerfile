@@ -1,4 +1,4 @@
-FROM cypress/browsers:node14.17.0-chrome91-ff89
+FROM cypress/browsers:node16.5.0-chrome94-ff93
 
 ENV MONO_VERSION 6.12
 
@@ -9,6 +9,8 @@ RUN echo "deb http://download.mono-project.com/repo/debian buster/snapshots/$MON
   && apt-get install -y mono-complete \
   && rm -rf /var/lib/apt/lists/* /tmp/*
 
-COPY ./entrypoint.sh /
+COPY entrypoint.sh /
+
+RUN chmod +x /entrypoint.sh
 
 ENTRYPOINT ["/entrypoint.sh"]
